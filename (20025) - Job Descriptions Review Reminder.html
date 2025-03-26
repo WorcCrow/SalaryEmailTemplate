@@ -8,8 +8,8 @@
       </tr>
       <tr>
          <td colspan="3" style="padding-left:24px">
-            <span style="color: #16A44A; font-size:24px; font-family: 'Source Sans Pro', Arial, sans-serif;">
-               New Company Job Request
+            <span style="color: #16A44A; font-size:24px;font-family: 'Source Sans Pro', Arial, sans-serif;">
+               View Job Description(s) Before Expiration
             </span>
          </td>
       </tr>
@@ -25,68 +25,12 @@
       <tr>
          <td></td>
          <td>
-            <span style="font-family:'Source Sans Pro', Arial, sans-serif;">You have a new company job request.</span>
-         </td>
-         <td></td>
-      </tr>
-      <tr>
-         <td></td>
-         <td>
-            &nbsp;
-         </td>
-         <td></td>
-      </tr>
-      <tr>
-         <td></td>
-         <td>
-            <a href="{{URL}}" target="_blank" style="color:#007dbc;font-family:'Source Sans Pro', Arial, sans-serif;{{hideforsso}}">
-               Please login to CompAnalyst to check the details.
-            </a>
-         </td>
-         <td></td>
-      </tr>
-      <tr>
-         <td></td>
-         <td>
-            <a href="{{URL}}" target="_blank" style="color:#007dbc;font-family:'Source Sans Pro', Arial, sans-serif;{{showforsso}}">
-               Please login to the CompAnalyst through your Single-Sign on link to make any necessary adjustments.
-            </a>
-         </td>
-         <td></td>
-      </tr>
-      <tr>
-         <td></td>
-         <td>
-            &nbsp;
-         </td>
-         <td></td>
-      </tr>
-      <tr>
-         <td></td>
-         <td>
-            <span style="font-family:'Source Sans Pro', Arial, sans-serif;">Requested by: {{RequestedBy}}</span>
-         </td>
-         <td></td>
-      </tr>
-      <tr>
-         <td></td>
-         <td>
-            <span style="font-family:'Source Sans Pro', Arial, sans-serif;">Job Title: {{CompanyJobTitle}}</span>
-         </td>
-         <td></td>
-      </tr>
-      {{PayMarketFormat}}
-      <tr>
-         <td></td>
-         <td>
-            <span style="font-family:'Source Sans Pro', Arial, sans-serif;">Job Summary: {{CompanyJobSummary}}</span>
-         </td>
-         <td></td>
-      </tr>
-      <tr>
-         <td></td>
-         <td>
-            <span style="font-family:'Source Sans Pro', Arial, sans-serif;">Note: {{Note}}</span> 
+            <span style="font-family:'Source Sans Pro', Arial, sans-serif;{{hideforsso}}">
+               Please click the link to review the following Job Description(s) and make any necessary adjustments. The link will expire on {{expired_date}}.
+            </span>
+            <span style="font-family:'Source Sans Pro', Arial, sans-serif;{{showforsso}}">
+               Please select the Single-Sign on link below to review the following Job Description(s) and make any necessary adjustments. The link will expire on {{expired_date}}.
+            </span>
          </td>
          <td></td>
       </tr>
@@ -98,11 +42,45 @@
       <tr>
          <td></td>
          <td>
+            <a href="{{ca_siteurl}}" target="_blank"
+               style="color:#007dbc;font-family:'Source Sans Pro', Arial, sans-serif;{{hideforsso}}">
+               Please login to CompAnalyst to check the details.
+            </a>
+            <a href="{{ca_siteurl}}" target="_blank"
+               style="color:#007dbc;font-family:'Source Sans Pro', Arial, sans-serif;{{showforsso}}">
+               Please login to the CompAnalyst through your Single-Sign on link to make any necessary adjustments.
+            </a>
+         </td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td> &nbsp; </td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td>{{jobdesc_list}}</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td> &nbsp; </td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td>
             <span style="font-family:'Source Sans Pro', Arial, sans-serif;">Thank you</span>
          </td>
          <td></td>
       </tr>
-      <tr height="60">
+      <tr>
+         <td></td>
+         <td>&nbsp;</td>
+         <td></td>
+      </tr>
+      <tr>
          <td></td>
          <td>
             <a href="{{ca_review_jd_token_link}}" target="_blank" style="color:#007dbc;font-family:'Source Sans Pro', Arial, sans-serif;">
