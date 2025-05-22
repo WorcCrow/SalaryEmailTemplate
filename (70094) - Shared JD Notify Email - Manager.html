@@ -3,8 +3,23 @@
 <body>
    <table width="754" style="width:754px;border:1px solid #fff;">
       <tr width="754" style="width:754px;">
-         <td style="padding-left:30px;font-size: 20px;">
-            <font color=#278d47><b>Setting Up Your Salary.com Account</b></font>
+         <td style="padding-left:20px"><span>
+               <font size=4pt color=#278d47><b>View Shared Job Description(s)</b></font>
+            </span></td>
+      </tr>
+      <tr width="754" style="width:754px;">
+         <td>&nbsp;</td>
+      </tr>
+      <tr width="754" style="width:754px;">
+         <td style="padding-left:30px">
+            <font size=3pt color=#000000><b>Hello,</b></font>
+         </td>
+      </tr>
+      <tr width="754" style="width:754px;">
+         <td>&nbsp;</td>
+      </tr> {{Comments}} <tr width="754" style="width:754px;">
+         <td style="padding-left:30px">
+            <font size=3pt color=#000000>Please click the link to view the following Job Description(s) for your team. <span style="display: {{flagExpireNoteBefore}};">The link will expire on {{expireDate}}.</span></font>
          </td>
       </tr>
       <tr width="754" style="width:754px;">
@@ -12,34 +27,17 @@
       </tr>
       <tr width="754" style="width:754px;">
          <td style="padding-left:30px">
-            <font size=3pt color=#000000><b>Hello {{EmployeeName}},</b></font>
-         </td>
-      </tr>
-      <tr width="754" style="width:754px;">
-         <td>&nbsp;</td>
-      </tr>
-      <tr width="754" style="width:754px;">
-         <td style="padding-left:30px">
-            <font size=3pt color=#000000>The Vericast Compensation Team has provided you with Leader access to Elevate. Elevate provides access to companywide job descriptions and the ability to access your direct reports job description. {{ExpireTip}}</font>
-         </td>
-      </tr>
-      <tr width="754" style="width:754px;">
-         <td>&nbsp;</td>
-      </tr>
-      <tr width="754" style="width:754px;">
-         <td style="padding-left:30px">
-            <font size=3pt color=#000000><a href="{{Url}}">
-                  <font size=3pt color=#45a0ce text-decoration=none><u>Confirm details and set up access</u>
-                  </font>
+            <font size=3pt color=#000000><a href="{{linkToViewJobDescription}}">
+                  <font size=3pt color=#45a0ce text-decoration=none><u>Please follow this link to view the Job
+                        Description(s).</u></font>
                </a></font>
          </td>
-      </tr>
-      <tr width="754" style="width:754px;">
+      </tr> {{SubOrdinateJDInfo}} <tr width="754" style="width:754px;">
          <td>&nbsp;</td>
       </tr>
       <tr width="754" style="width:754px;">
          <td style="padding-left:30px">
-            <font size=3pt color=#000000>You may also access Elevate through your mySuccess homepage using the <b>Home</b> drop down menu.</font>
+            <font size=3pt color=#000000><span style="display: {{flagExpireNoteAfter}};">The link will expire on {{expireDate}}.</span></font>
          </td>
       </tr>
       <tr width="754" style="width:754px;">
@@ -52,12 +50,12 @@
       </tr>
       <tr width="754" style="width:754px;">
          <td style="padding-left:30px">
-            <font size=3pt color=#000000>Vericast Compensation Team</font>
+            <font size=3pt color=#000000>Salary.com Administrator</font>
          </td>
       </tr>
       <tr width="754" style="width:754px;">
          <td style="padding-left:30px">
-            <font size=3pt color=#000000><a href="mailto: {{SendFrom}}">{{SendFrom}}</a>
+            <font size=3pt color=#000000><a href="mailto: {{adminEmail}}">{{adminEmail}}</a>
          </td>
       </tr>
    </table>
